@@ -8,6 +8,9 @@
 import Foundation
 
 class MenuController {
+    // Singleton
+    static let shared = MenuController()
+    
     let baseURL = URL(string: "http://localhost:8080/")!
     
     func fetchCategories() async throws -> [String] {
