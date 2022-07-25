@@ -16,6 +16,8 @@
 		F8619C7C288F13BA00D94E0A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C7B288F13BA00D94E0A /* MenuTableViewController.swift */; };
 		F8619C7E288F13CD00D94E0A /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C7D288F13CD00D94E0A /* OrderTableViewController.swift */; };
 		F8619C80288F15B400D94E0A /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C7F288F15B400D94E0A /* MenuItemDetailViewController.swift */; };
+		F8619C82288F16FA00D94E0A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C81288F16FA00D94E0A /* MenuItem.swift */; };
+		F8619C84288F17BA00D94E0A /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C83288F17BA00D94E0A /* ResponseModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		F8619C7B288F13BA00D94E0A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		F8619C7D288F13CD00D94E0A /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		F8619C7F288F15B400D94E0A /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		F8619C81288F16FA00D94E0A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		F8619C83288F17BA00D94E0A /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				F8619C7B288F13BA00D94E0A /* MenuTableViewController.swift */,
 				F8619C7D288F13CD00D94E0A /* OrderTableViewController.swift */,
 				F8619C7F288F15B400D94E0A /* MenuItemDetailViewController.swift */,
+				F8619C81288F16FA00D94E0A /* MenuItem.swift */,
+				F8619C83288F17BA00D94E0A /* ResponseModels.swift */,
 			);
 			path = OrderApp;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8619C82288F16FA00D94E0A /* MenuItem.swift in Sources */,
 				F8619C7C288F13BA00D94E0A /* MenuTableViewController.swift in Sources */,
+				F8619C84288F17BA00D94E0A /* ResponseModels.swift in Sources */,
 				F8619C80288F15B400D94E0A /* MenuItemDetailViewController.swift in Sources */,
 				F8619C7E288F13CD00D94E0A /* OrderTableViewController.swift in Sources */,
 				F8619C66288F0FD400D94E0A /* AppDelegate.swift in Sources */,
