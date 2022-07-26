@@ -21,6 +21,7 @@
 		F8619C86288F1AF000D94E0A /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C85288F1AF000D94E0A /* MenuController.swift */; };
 		F8619C8828902F1E00D94E0A /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C8728902F1E00D94E0A /* OrderConfirmationViewController.swift */; };
 		F8619C8A2890588100D94E0A /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C892890588100D94E0A /* MenuItemCell.swift */; };
+		F8619C8C2890713800D94E0A /* Restoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8619C8B2890713800D94E0A /* Restoration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F8619C85288F1AF000D94E0A /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		F8619C8728902F1E00D94E0A /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		F8619C892890588100D94E0A /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		F8619C8B2890713800D94E0A /* Restoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				F8619C85288F1AF000D94E0A /* MenuController.swift */,
 				F8619C8728902F1E00D94E0A /* OrderConfirmationViewController.swift */,
 				F8619C892890588100D94E0A /* MenuItemCell.swift */,
+				F8619C8B2890713800D94E0A /* Restoration.swift */,
 			);
 			path = OrderApp;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				F8619C8828902F1E00D94E0A /* OrderConfirmationViewController.swift in Sources */,
 				F8619C82288F16FA00D94E0A /* MenuItem.swift in Sources */,
+				F8619C8C2890713800D94E0A /* Restoration.swift in Sources */,
 				F8619C8A2890588100D94E0A /* MenuItemCell.swift in Sources */,
 				F8619C86288F1AF000D94E0A /* MenuController.swift in Sources */,
 				F8619C7C288F13BA00D94E0A /* MenuTableViewController.swift in Sources */,

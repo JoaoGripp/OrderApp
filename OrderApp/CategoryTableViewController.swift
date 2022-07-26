@@ -72,5 +72,11 @@ class CategoryTableViewController: UITableViewController {
         content.text = category.capitalized
         cell.contentConfiguration = content
     }
+    
+//    MARK: - Save User Activity
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        MenuController.shared.updateUserActivity(with: .categories)
+    }
 
 }

@@ -122,4 +122,11 @@ class OrderTableViewController: UITableViewController {
         }
     }
     
+    //    MARK: - Save User Activity
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            MenuController.shared.updateUserActivity(with: .order)
+        }
+
+    
 }

@@ -15,11 +15,15 @@ class MenuController {
     var order = Order() {
         didSet {
             NotificationCenter.default.post(name: MenuController.orderUpatedNotification, object: nil)
+            userActivity.order = order
         }
     }
     
     //Notification for follow change on order
     static let orderUpatedNotification = Notification.Name("MenuController.orderUpdated")
+    
+    // Save user activity
+    var userActivity = NSUserActivity(activityType: "com.CRG.OrderApp.order")
     
     
     let baseURL = URL(string: "http://localhost:8080/")!
@@ -96,6 +100,20 @@ class MenuController {
         }
         
         return image
+    }
+    
+    //MARK: - Update User Activity
+    func updateUserActivity(with controller: StateRestorationController) {
+        switch controller {
+        case .menu(let category):
+            userActivity.menuCategory = category
+        case .menuItemDetail(let menuItem):
+            userActivity.menuItem = menuItem
+        case .categories, .order:
+            break
+        }
+        
+        userActivity.controllerIdentifier = controller.identifier
     }
 }
 

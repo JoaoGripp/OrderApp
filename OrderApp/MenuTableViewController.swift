@@ -114,4 +114,11 @@ class MenuTableViewController: UITableViewController {
         return MenuItemDetailViewController(coder: coder, menuItem: menuItem)
     }
     
+    //    MARK: - Save User Activity
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            MenuController.shared.updateUserActivity(with: .menu(category: category))
+        }
+
+    
 }
