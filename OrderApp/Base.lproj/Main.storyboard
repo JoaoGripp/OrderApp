@@ -276,7 +276,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Dismiss"/>
                                         <connections>
-                                            <segue destination="Yze-na-96N" kind="unwind" identifier="dismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="m9b-59-DZ5"/>
+                                            <segue destination="Yze-na-96N" kind="unwind" identifier="dismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="ail-A1-861"/>
                                         </connections>
                                     </button>
                                 </subviews>

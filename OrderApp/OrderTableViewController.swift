@@ -100,4 +100,12 @@ class OrderTableViewController: UITableViewController {
         self.present(alert, animated: true)
     }
     
+//    receive the dismissButton form OrderConfirmation
+    @IBAction func unwindToOrderList(segue: UIStoryboardSegue) {
+        
+        if segue.identifier == "dismissConfirmation" {
+            MenuController.shared.order.menuItems.removeAll()
+        }
+    }
+    
 }

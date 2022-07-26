@@ -28,10 +28,6 @@ class OrderConfirmationViewController: UIViewController {
         confirmationLabel.text = "Thanks you for your order! Your wait time is approximately \(minutesToPrepare) minutes"
     }
     
-    @IBAction func unwindToOrderList(segue: UIStoryboardSegue) {
-        
-    }
-    
 
     /*
     // MARK: - Navigation
