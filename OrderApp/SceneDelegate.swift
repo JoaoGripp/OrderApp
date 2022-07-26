@@ -10,13 +10,24 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    //Update tabBarItem with badge of number order on bag
+    var orderTabBarItem: UITabBarItem!
+    
+    @objc func updateOrderBag() {
+        orderTabBarItem.badgeValue = String(MenuController.shared.order.menuItems.count)
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // notification observer to get information about Item added to order
+        NotificationCenter.default.addObserver(self, selector: #selector(updateOrderBag), name: MenuController.orderUpatedNotification, object: nil)
+        
+        orderTabBarItem = (window?.rootViewController as? UITabBarController)?.viewControllers?[1].tabBarItem
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
