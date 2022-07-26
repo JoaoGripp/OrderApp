@@ -10,6 +10,16 @@ import Foundation
 class MenuController {
     // Singleton
     static let shared = MenuController()
+    //share order data
+    var order = Order() {
+        didSet {
+            NotificationCenter.default.post(name: MenuController.orderUpatedNotification, object: nil)
+        }
+    }
+    
+    //Notification for follow change on order
+    static let orderUpatedNotification = Notification.Name("MenuController.orderUpdated")
+    
     
     let baseURL = URL(string: "http://localhost:8080/")!
     
