@@ -153,6 +153,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add to Order"/>
+                                <connections>
+                                    <action selector="orderButtonTapped:" destination="Sp9-cv-8yI" eventType="touchUpInside" id="X6P-rd-L5u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FQb-WL-ucU"/>
