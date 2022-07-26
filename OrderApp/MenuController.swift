@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MenuController {
     // Singleton
@@ -80,6 +81,22 @@ class MenuController {
         
         return orderResponse.prepTime
     }
+    
+//    MARK: - Fetch Image
+    func fetchImage(from url: URL) async throws -> UIImage {
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              httpResponse.statusCode == 200 else {
+            throw MenuControllerError.imageDataMissing
+        }
+        
+        guard let image = UIImage(data: data) else {
+            throw MenuControllerError.imageDataMissing
+        }
+        
+        return image
+    }
 }
 
 //MARK: - API Errors
@@ -87,6 +104,7 @@ enum MenuControllerError: Error, LocalizedError {
     case categoriesNotFound
     case menuItemsNotFound
     case orderRequestFailed
+    case imageDataMissing
 }
 
 //MARK: - Type aliases to make code more clear
